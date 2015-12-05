@@ -1,0 +1,43 @@
+#head {
+	background-color: #ccf2ff;
+	opacity: .8;
+	margin-bottom: 0;
+	padding: 4%;
+}
+
+.jumbotron h1 {
+	color: #ff4d4d;
+}
+
+body {
+	background-image: url('http://static.squarespace.com/static/51f5b63be4b086a9c87e584c/t/5335b0bbe4b0155dadf1d90e/1396027579824/8323_NYC_black_and_white_m.jpg');
+	background-size:100%;
+}
+
+.container div {
+	display: block;
+	margin: 15% auto;
+
+}
+
+.glyphicon {
+	font-size: 160px;
+	opacity:.95;
+}
+
+.green {
+	color:#70db70;
+}
+
+.blue {
+	color: #ccf2ff;
+}
+
+body {
+	box-sizing: border-box;
+}
+
+.container h2 {
+	color:#ff4d4d;
+	font-size: 40px;
+}
