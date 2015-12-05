@@ -24,13 +24,18 @@
   <hr>
   <form method="POST" action="/guestbook/submit">
     Name: <input type="text" name="name" /> <br>
-    Education (Name of College): <input type="text" name="education" /> <br>
-    Investment: <input type = "text" name="investment"/> <br>
-    Experience: <br>
+    Email: <input type="email" name="useremail" /> <br> <br>
+    Education (Name of College): <input type="text" name="education" /> <br> <br>
+
+    <strong> Investment: </strong> <br> <input type = "radio" name="invest-low" value="invest-low"/> >100,000 <br>
+    <input type = "radio" name="invest-med" value="invest-med"/> >250,000 <br>
+    <input type = "radio" name="invest-high" value="invest-high"/> >500,000 <br>
+    <br>
+    <em> Experience: </em> <br>
     <input type="checkbox" name="vehicle1" value="Bike"> Coffeeshops <br>
     <input type="checkbox" name="vehicle2" value="Car"> Fast Food <br>
     <input type="checkbox" name="vehicle2" value="Car"> Laundromat <br>
-    <input type="checkbox" name="vehicle2" value="Car"> Grocery Store <br>
+    <input type="checkbox" name="vehicle2" value="Car"> Grocery Store <br> <br>
 
     <button type="submit">Submit</button>
   </form>

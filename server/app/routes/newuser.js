@@ -10,10 +10,6 @@ router.get('/', function (req, res, next) {
 });
 
 
-// router.get('/display', function (req, res, next) {
-// 	res.send("DISPLAY")
-// });
-
 
 router.post('/submit', function (req, res, next) {
 		//allows you to post a new page
@@ -21,6 +17,7 @@ router.post('/submit', function (req, res, next) {
 	    var newPerson = new Person({
 	    	comment: req.body.comment,
 	    	name: req.body.name
+
         });
         console.log(newPost);
         newPost.save()
