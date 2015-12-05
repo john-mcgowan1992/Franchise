@@ -20,11 +20,11 @@ var personSchema = new mongoose.Schema({
 	},
 	Investment: {
 		type: String,
-		required: true,
+		// required: true
 	},
 	Experience: {
 		type: [String],
-		required: true
+		// required: true
 	}
 })
 

@@ -10,21 +10,24 @@ router.get('/', function (req, res, next) {
 });
 
 
+
 router.post('/submit', function (req, res, next) {
 		//allows you to post a new page
 		console.log(req.body)
 	    var newPerson = new Person({
-	    	comment: req.body.comment,
-	    	name: req.body.name
-
+	    	Name: req.body.name,
+	    	Email: req.body.email,
+	    	Education: req.body.Education,
+	    	// Investment: req.body.Investment,
         });
-        console.log(newPost);
-        newPost.save()
-        .then(function (newPost) {
-			res.send(newPost);
+        console.log(newPerson);
+        newPerson.save()
+        .then(function (newPerson) {
+			res.send(newPerson);
         }).then(null, function(err) {
         	console.log(err);
         })
+        res.send("This worked!");
 
 });
 
