@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/users');
+mongoose.connect('mongodb://localhost/Michael');
 
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'mongodb connection error: '));
@@ -11,16 +11,14 @@ var personSchema = new mongoose.Schema({
 		type: String,
 		required: true
 	},
-	Email: {
-		home: {type: mongoose.SchemaTypes.Email, required: true}
-	},
 	Education: {
 		type: String,
 		required: true
 	},
 	Investment: {
-		type: String,
+		type: Number,
 		required: true,
+		unique: true
 	},
 	Experience: {
 		type: [String],
