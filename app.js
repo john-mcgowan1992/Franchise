@@ -26,6 +26,9 @@ app.get('/', function (req, res) {
    res.render('index');
 });
 
+app.get('/home', function (req, res) {
+	res.render('layout');
+});
 
 app.use(function (err, req, res, next) {
     console.error(err);

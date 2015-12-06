@@ -14,11 +14,11 @@ router.get('/', function (req, res, next) {
 router.post('/submit', function (req, res, next) {
 		//allows you to post a new page
 	    var newPerson = new Person({
-	    	Name: req.body.name,
-	    	Email: req.body.email,
-	    	Education: req.body.education,
-	    	Investment: req.body.optradio,
-	    	Experience: req.body.experience
+	    	name: req.body.name,
+	    	email: req.body.email,
+	    	education: req.body.education,
+	    	investment: req.body.optradio,
+	    	experience: req.body.experience
         });
         console.log(newPerson.Experience);
         newPerson.save()

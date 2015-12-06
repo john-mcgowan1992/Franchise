@@ -12,38 +12,16 @@
           <a class="navbar-brand" href="/users">All Users</a>
         </div>
         <div id="nav-items" class="collapse navbar-collapse">
+
         </div>
       </div>
     </div>
     <div class="container content">
-      <h3>Pages</h3>
-
+    	<h3>Pages</h3>
   <hr>
-  <h3> This is a list of all the users </h3>
-
+  <h3> Welcome to this page right? </h3>
   <hr>
-  {% extends "layout.html" %}
-
-    {% block content %}
-      <h3>Pages</h3>
-      <hr>
-      <form method="GET" action="/wiki/search">
-        <input type="text" name="search" />
-        <button type="submit">Search</button>
-      </form>
-      <hr>
-      <ul class="list-unstyled">
-        <ul>
-          {% for user in users %}
-          <li>
-            {{user}}
-          </li>
-          {% endfor %}
-        </ul>
-      </ul>
-    {% endblock %}
-
-
+   {% block content %}{% endblock %}
     </div>
     <hr/>
     <div id="footer" class="container text-muted">
@@ -53,3 +31,4 @@
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
   </body>
 </html>
+
