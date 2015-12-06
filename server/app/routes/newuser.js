@@ -17,17 +17,16 @@ router.post('/submit', function (req, res, next) {
 	    var newPerson = new Person({
 	    	Name: req.body.name,
 	    	Email: req.body.email,
-	    	Education: req.body.Education,
+	    	Education: req.body.education,
 	    	// Investment: req.body.Investment,
         });
         console.log(newPerson);
         newPerson.save()
         .then(function (newPerson) {
-			res.send(newPerson);
+        	console.log("Nothing");
         }).then(null, function(err) {
         	console.log(err);
         })
-        res.send("This worked!");
 
 });
 
