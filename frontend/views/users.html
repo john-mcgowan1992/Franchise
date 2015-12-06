@@ -21,42 +21,25 @@
     	<h3>Pages</h3>
   <h3> Please fill out some information </h3>
   <hr>
-  <form method="POST" action="/newuser/submit" class="form-horizontal">
+  <form method="POST" action="/newuser/submit">
 
-  <div class="form-group">
-    <label for="name" class="col-sm-2 control-label">Name:</label>
-    <div class="col-sm-10">
-      <input type="text" class="form-control" name="name" placeholder="Your name here.">
+    <div class = "form-group">
+    Name: <input type="text" name="name" class="form-control" placeholder="Your Name Here"/>
     </div>
-  </div>
 
-  <div class="form-group">
-    <label for="email" class="col-sm-2 control-label">Email:</label>
-    <div class="col-sm-10">
-      <input type="email" class="form-control" name="email" placeholder="example@mail.com">
+    <div class = "form-group">
+    Email: <input type="email" name="email" class="form-control" placeholder="example@mail.com"/>
     </div>
-  </div>
 
-  <div class="form-group">
-    <label for="education" class="col-sm-2 control-label">Education:</label>
-    <div class="col-sm-10">
-      <input type="text" class="form-control" name="education" placeholder="School of Hard Knocks">
+    <div class = "form-group">
+    Education (Name of College): <input type="text" name="education" class="form-control" placeholder = "school of hard knocks" />
     </div>
-  </div>
 
-    <strong>Investment</strong>
-
-<div class="form-group in-line">
-        <label class="radio-inline" >
-          <input type="radio" name="optradio" value="invest-low"> >100,000 value
-        </label>
-        <label class="radio-inline">
-          <input type="radio" name="optradio" value="invest-med"> >250,000 value
-        </label>
-        <label class="radio-inline">
-          <input type="radio" name="optradio" value="invest-high"> >500,000 value
-        </label>
-</div>
+    <div class = "form-group">
+    <strong> Investment: </strong> <br> <input type = "radio" name="optradio" value="invest-low"/> >100,000
+    <input type = "radio" name="optradio" value="invest-med"/> >250,000
+    <input type = "radio" name="optradio" value="invest-high"/> >500,000
+    </div>
 
     <div class = "form-group">
     <strong> Experience: </strong> <br>

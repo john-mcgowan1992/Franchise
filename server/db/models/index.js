@@ -23,13 +23,11 @@ var personSchema = new mongoose.Schema({
 		required: true
 	},
 	Investment: {
-		type: Number,
-		// required: true,
+		type: String,
+		required: true
 	},
 	Experience: {
-		type: String[]
-		get: checkBox
-		// required: true
+		type: String
 	}
 })
 

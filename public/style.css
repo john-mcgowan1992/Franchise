@@ -20,6 +20,16 @@ body {
 
 }
 
+/*.container-form {
+        width: 500px;
+        clear: both;
+}
+
+.container-form input {
+        width: 100%;
+        clear: both;
+}
+*/
 .glyphicon {
 	font-size: 160px;
 	opacity:.95;

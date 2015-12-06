@@ -21,7 +21,7 @@ app.use(bodyParser.json());
 
 
 app.use('/newuser', require('./server/app/routes/newuser.js'));
-
+app.use('/users', require('./server/app/routes/users.js'));
 app.get('/', function (req, res) {
    res.render('index');
 });
