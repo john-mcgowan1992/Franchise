@@ -11,22 +11,26 @@ function checkBox(){
 }
 
 var personSchema = new mongoose.Schema({
-	Name: {
+	name: {
 		type: String,
 		required: true
 	},
-	Email: {
+	email: {
 		type: String
 	},
-	Education: {
+	password: {
+		type: String,
+		unique: true
+	},
+	education: {
 		type: String,
 		required: true
 	},
-	Investment: {
+	investment: {
 		type: String,
 		required: true
 	},
-	Experience: {
+	experience: {
 		type: String
 	}
 })

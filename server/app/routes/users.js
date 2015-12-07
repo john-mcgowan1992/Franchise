@@ -6,8 +6,10 @@ module.exports = router;
 
 router.get('/', function (req, res, next) {
         Person.find().then(function (data) {
-                res.render(data, {users: data})
-        })
+                console.log('hello');
+                console.log(data);
+                res.render('users', {users: data})
+        });
 
 });
 

@@ -16,18 +16,17 @@ router.post('/submit', function (req, res, next) {
 	    var newPerson = new Person({
 	    	name: req.body.name,
 	    	email: req.body.email,
+	    	password: req.body.password,
 	    	education: req.body.education,
 	    	investment: req.body.optradio,
 	    	experience: req.body.experience
         });
-        console.log(newPerson.Experience);
         newPerson.save()
         .then(function (newPerson) {
         	res.send(newPerson)
         }).then(null, function(err) {
         	console.log(err);
         })
-        next();
 });
 
 
